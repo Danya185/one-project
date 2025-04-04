@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    color: whitesmoke;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Добавляем отступ снизу */
+}
+
+#header-text {
+    margin-bottom: 20px;
+    font-size: 2.5rem; /* Увеличиваем размер текста заголовка */
+    color: white; /* Цвет текста */
+    text-shadow: 2px 2px 4px black; /* Параметры тени */
+    -webkit-text-stroke: 1px black; /* Толщина и цвет обводки */
+}
+
+#countdown {
+    display: flex; /* Устанавливаем флекс-контейнер для горизонтального расположения */
+    gap: 20px;
+}
+
+.countdown-item {
+    text-align: center;
+}
+
+.countdown-value {
+    font-size: 4rem; /* Увеличиваем размер текста счётчика */
+    color: white; /* Цвет текста */
+    text-shadow: 2px 2px 4px black; /* Параметры тени */
+    -webkit-text-stroke: 1px black; /* Толщина и цвет обводки */
+}
+
+.countdown-label {
+    font-size: 1.5rem; /* Увеличиваем размер текста меток */
+    color: white; /* Цвет текста */
+    text-shadow: 2px 2px 4px black; /* Параметры тени */
+    -webkit-text-stroke: 1px black; /* Толщина и цвет обводки */
+}
+
+body {
+    background-image: url(220f68.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

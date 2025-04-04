@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сколько дней до Нового года</title>
+    <link rel="stylesheet" href="styles-girland.css">
+</head>
+<body>
+    <ul class="lightrope">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div class="container">
+        <h1 id="header-text">Сколько дней до Нового года</h1>
+        <div id="countdown">
+            <div class="countdown-item">
+                <span class="countdown-value" id="days"></span>
+                <span class="countdown-label" id="days-label">Дней</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-value" id="hours"></span>
+                <span class="countdown-label" id="hours-label">Часов</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-value" id="minutes"></span>
+                <span class="countdown-label" id="minutes-label">Минут</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-value" id="seconds"></span>
+                <span class="countdown-label" id="seconds-label">Секунд</span>
+            </div>
+        </div>
+        <button id="music-button">Включить музыку</button>
+        <audio id="background-music" loop>
+            <source src="Jingle bells - МИНУС.mp3" type="audio/mpeg">
+            Ваш браузер не поддерживает элемент audio.
+        </audio>
+    </div>
+    <script src="script.js"></script>
+    <script src="script_gir.js"></script>
+    <script src="script2.js"></script>
+</body>
+</html>
+
+<style>
+    body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    color: whitesmoke;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Добавляем отступ снизу */
+}
+
+#header-text {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    color: azure;
+    text-shadow: 2px 2px 4px black;
+}
+
+#countdown {
+    display: flex; /* Устанавливаем флекс-контейнер для горизонтального расположения */
+    gap: 20px;
+}
+
+.countdown-item {
+    text-align: center;
+}
+
+.countdown-value {
+    font-size: 4rem;
+    color: azure;
+    text-shadow: 2px 2px 4px black;
+}
+
+.countdown-label {
+    font-size: 1.5rem;
+    color: azure;
+    text-shadow: 2px 2px 4px black;
+}
+
+
+body {
+    background-image: url(220f68.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+</style>
+<style>
+    #music-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #008cff; /* Красный цвет фона */
+    color: white; /* Белый цвет текста */
+    border: none; /* Убираем границу */
+    border-radius: 10px; /* Закругляем углы */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+    transition: background-color 0.3s, transform 0.3s; /* Добавляем анимацию */
+}
+
+#music-button:hover {
+    background-color: #30cc00; /* Темно-красный цвет при наведении */
+    transform: scale(1.05); /* Увеличиваем кнопку при наведении */
+}
+
+#music-button:active {
+    background-color: #990000; /* Темно-красный цвет при нажатии */
+    transform: scale(0.95); /* Уменьшаем кнопку при нажатии */
+}
+</style>
