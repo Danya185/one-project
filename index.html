@@ -6,37 +6,40 @@
     <title>Сколько дней до Нового года</title>
     <link rel="stylesheet" href="styles-girland.css">
     <style>
-        /* Общие стили */
+        /* Фон */
         body {
+            background-image: url('220f68.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 100vh; /* Фон занимает всю высоту экрана */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: white;
-            color: whitesmoke;
-            font-family: Arial, sans-serif;
             margin: 0;
+            font-family: Arial, sans-serif;
         }
 
         .container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 90%; /* Ограничиваем ширину */
-            max-width: 800px; /* Устанавливаем максимальную ширину */
-            text-align: center; /* Центрируем текст */
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
         }
 
         #header-text {
-            font-size: 2.5rem; /* Адаптивный размер заголовка */
+            font-size: 2.5rem;
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px black;
+            color: azure;
         }
 
         #countdown {
             display: flex;
-            flex-wrap: wrap; /* Позволяет элементам переноситься */
+            flex-wrap: wrap;
             gap: 15px;
             justify-content: center;
         }
@@ -49,11 +52,13 @@
         .countdown-value {
             font-size: 3rem;
             text-shadow: 2px 2px 4px black;
+            color: azure;
         }
 
         .countdown-label {
             font-size: 1.2rem;
             text-shadow: 2px 2px 4px black;
+            color: azure;
         }
 
         /* Кнопка */
@@ -81,7 +86,8 @@
             }
 
             #countdown {
-                flex-direction: column; /* Размещаем элементы вертикально */
+                flex-wrap: wrap; /* Теперь таймер не будет вертикальным */
+                justify-content: center;
             }
 
             .countdown-value {
